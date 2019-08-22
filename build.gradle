@@ -46,6 +46,7 @@ subprojects {
         compile "com.fasterxml.jackson.core:jackson-core:$jacksonVersion"
         compile "com.fasterxml.jackson.core:jackson-databind:$jacksonVersion"
         compile "com.fasterxml.jackson.core:jackson-annotations:$jacksonVersion"
+        compile "org.springframework.boot:spring-boot-starter-actuator:$springBootVersion"
         compile "org.slf4j:slf4j-api:$slf4jVersion"
 
         testCompile "junit:junit:$junitVersion"
@@ -57,5 +58,6 @@ subprojects {
         testLogging {
             exceptionFormat = 'full'
         }
+
     }
 }
